@@ -6,7 +6,7 @@ namespace Atymic\Twitter\Concern;
 
 use Atymic\Twitter\Exception\ClientException;
 
-trait ExtraEndpoints
+trait CountTweets
 {
     use ApiV2Behavior;
 
