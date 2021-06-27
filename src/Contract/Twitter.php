@@ -22,6 +22,16 @@ interface Twitter extends BaseTwitterContract
      */
     public function getTweets(array $tweetIds, array $additionalParameters);
 
+
+
+    /**
+     * @throws ClientException
+     * @see https://developer.twitter.com/en/docs/twitter-api/tweets/counts/introduction
+     */
+    public function countRecent(string $query, array $additionalParameters);
+
+
+
     /**
      * @throws ClientException
      * @see https://developer.twitter.com/en/docs/twitter-api/tweets/search/api-reference/get-tweets-search-recent
