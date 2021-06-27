@@ -15,6 +15,7 @@ use Atymic\Twitter\Concern\TweetLookup;
 use Atymic\Twitter\Concern\UserLookup;
 use Atymic\Twitter\Contract\Querier as QuerierContract;
 use Atymic\Twitter\Contract\Twitter as TwitterContract;
+use Atymic\Twitter\Concern\CountTweets;
 
 final class Accessor implements TwitterContract
 {
@@ -27,6 +28,7 @@ final class Accessor implements TwitterContract
     use Follows;
     use HideReplies;
     use HotSwapper;
+    use CountTweets;
 
     private QuerierContract $querier;
 
